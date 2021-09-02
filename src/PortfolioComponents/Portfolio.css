@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* 
+ *{
+     padding: 0px;
+     margin: 0px;
+     box-sizing: border-box;
+ } */
+    @media (max-width: 600px) {
+        .app__main-content {
+            margin-right: 10px;
+            margin-left: 10px;
+            /* margin: 25px 10px */
+        }
+        .about{
+            padding: 0px;
+        }
+        .about__container{
+            padding: 8px 0px;
+        }
+        .projectCard__image{
+            width: 80%;
+            height: 55%;
+        }
+    
+        .navbar__active {
+            font-size: 1.5rem;
+        }
+    
+        .navbar__item {
+            font-size: 20px;
+        }
+        
+    }
+
+    @media(max-width:991px) {
+        .app__main-content {
+            margin: 30px 4px;
+            font-size: 25px;
+        }
+        
+    }
+
+  
+    /* @media screen and (min-width: 375px) and (max-width: 900px){
+        .navbar__active{
+            font-size: 20px;
+            font-weight: 200px;
+        }
+    } */
+
+
+body{
+    background-image: linear-gradient(to right bottom,#000000, #e798d6);
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to right bottom, green, blue);
+}
+
+a{
+    text-decoration: none;
+    color: #354548;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.app__container{
+    padding-top: 20px ;
+}
+.app__row{
+    height: 85vh;
+}
+
+
+.app__main-content{
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0px 0px 10px black;
+
+
+}
+
+/*  below are sidebar content */
+.sidebar{
+    background-color: #fff;
+    /* color: #070707; */
+    height: 100%;
+    border-radius: 20px;
+    padding: 25px 15px;
+    box-shadow: 0px 0px 10px black;
+    text-align: center;
+
+}
+
+.sidebar__avatar{
+    height: 110px;
+    width: 120px;
+    object-fit: contain;
+    border-radius: 30px;
+}
+.sidebar__icon{
+    width: 35px;
+    height: 35px;
+}
+.sidebar__icon:hover{
+    cursor: pointer;
+    transition: all 0.5s linear;
+    transform: scale(1.2);
+}
+.sidebar__name{
+    font-family: "kaushan script";
+    font-weight: bold;
+    margin: 20px 0px;
+    font-size: 1.8rem;
+}
+.sidebar__name>span{
+    color: maroon;
+}
+
+.sidebar__item{
+    margin-bottom: 6px;
+    padding-top: 6px;
+    height: 40px;
+    font-size: 1.05rem;
+    border-radius: 25px;
+}
+.sidebar__title{
+    background-color: rgb(224, 228, 228);
+    border-radius: 25px;
+
+}
+.sidebar__contact{
+    background-color: rgb(224, 228, 228);
+    padding: 2px 0px;
+    border-radius: 25px;
+    margin: 20px -15px;
+}
+.sidebar__email{
+    background-image: linear-gradient(to right bottom, #c31432,#240b36);
+    border-radius: 25px;
+    color: #fff;
+    margin: 15px 25px 0px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+.sidebar__email:hover{
+    background-color: springgreen;
+    transform: scale(1.2);
+}
+.sidebar__github:hover,
+.sidebar__resume:hover{
+    background-color: #f1f1f2;
+    color: #000;
+}
+
+
+/* navbar section */
+
+.navbar__items{
+    display: flex;
+}
+.navbar__active{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(29, 16, 11);
+    border-bottom: 4px solid rgb(56, 234, 240);
+}
+.navbar__item{
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(91, 56, 247);
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.navbar__item:hover{
+    background: -webkit-linear-gradient(#000000,#b752ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about{
+    padding:20px;
+
+}
+.about__intro{
+    font-size: 1.2rem;
+    padding: 18px 21px;
+    margin:5px 0;
+}
+.about__container{
+    background-color: rgb(191, 241, 198);
+    border-radius: 15px;
+    padding: 30px 20px;
+
+
+}
+.about__heading{
+    font-size: 25px;
+    padding-top: 0px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(31, 11, 11);
+}
+/* skill card */
+
+.skill-card{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+
+}
+.skill-card__icon{
+    width: 25px;
+    height: 25px;
+}
+.skill-card__body{
+    margin-left: 15px;
+
+}
+.skill-card__content{
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgb(150, 144, 144)
+
+}
+
+/* Resume Section */
+
+.resume{
+    padding-top: 20px;
+
+}
+.resume-card__heading{
+    margin-left: 10px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color:  rgb(48, 48, 48);
+}
+.resume-card__body{
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.resume-card__title{
+    font-weight: 550;
+    font-size: 1.3rem;
+}
+.resume-card__details{
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+.resume-language__heading{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgb(48, 48, 48);
+    margin-left: 10px;
+}
+.resume-card__name{
+    font-size: 16px;   
+}
+
+/* resume bar section */
+
+.bar{
+    width:100%;
+    background-color: rgb(175, 177, 175);
+    border-radius: 20px;
+    margin-bottom: 12px;
+
+}
+
+/* .skill_wrapper{
+    width: 90%;
+    background-color: grey;
+    border-radius: 20px;
+} */
+
+
+.bar__icon{
+    width: 20px;
+    height: 20px;
+}
+.bar__wrapper{
+    background-image: linear-gradient(90deg, #0bdceb,#4c41ee);
+    border-radius: 12px;
+    /* border: 2px solid rgb(12, 7, 61); */
+    padding: 4px, 14px;
+    font-size: 0.9rem;
+    color: rgb(51, 1, 1);
+    /* width: 10px; */
+}
+
+/* Projec section  */
+
+/* below for scrollbar */
+.projects{
+    height: 72vh;
+    padding-top: 30px;
+    overflow-y: auto;
+    /* w3schools */
+    /* background-color: rgb(255, 255, 255); */
+    /* overflow: auto;
+    white-space: nowrap; */
+}
+
+
+.projectCard__wrapper{
+    margin: 10px 0;
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+
+}
+
+.projectCard__image{
+    width: 100%;
+    height: 70%;
+    border-radius: 15px;
+    border: 2px solid green;
+    transition: transform 0.3s linear;
+}
+.projectCard__image:hover{
+    transform: scale(1.05);
+}
+.projectCard__icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+.projectCard__title{
+    margin-top: 12px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects__navbar{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.projects__navbar-active{
+    color: rgb(4, 10, 39);
+    font-weight: 650;
+}
+
+.projects__navbar div{
+    margin: 0 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Scrollbar  */
+
+
+
+/* .projects a:hover {
+    background-color: #777;
+  }
+.projects a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  } */
